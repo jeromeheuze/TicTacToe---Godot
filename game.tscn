@@ -1,0 +1,96 @@
+[gd_scene load_steps=2 format=3 uid="uid://xa8xyu6q2tib"]
+
+[ext_resource type="Script" uid="uid://drbwdqv4n4v0m" path="res://game_script.gd" id="1_80nbo"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_80nbo")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+custom_minimum_size = Vector2(90, 90)
+offset_left = 84.0
+offset_top = 85.0
+offset_right = 632.0
+offset_bottom = 633.0
+columns = 3
+
+[node name="Button" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+
+[node name="Button2" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+
+[node name="Button3" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+
+[node name="Button4" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+
+[node name="Button5" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+
+[node name="Button6" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+
+[node name="Button7" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+
+[node name="Button8" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+
+[node name="Button9" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+
+[node name="Menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="Menu"]
+layout_mode = 0
+offset_right = 719.0
+offset_bottom = 722.0
+
+[node name="Button" type="Button" parent="Menu"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 305.0
+offset_right = 460.0
+offset_bottom = 369.0
+theme_override_font_sizes/font_size = 25
+text = "Play 1 vs 1"
+
+[node name="Label" type="Label" parent="Menu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 17.968
+anchor_bottom = 17.995
+offset_left = 236.0
+offset_top = 164.0
+offset_right = -260.72003
+offset_bottom = -486.80005
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.37333018, 0.11484065, 0.22256517, 1)
+theme_override_font_sizes/font_size = 50
+text = "You won!"
+
+[connection signal="pressed" from="Menu/Button" to="." method="_on_button_pressed"]
